@@ -2,6 +2,9 @@
 require "sinatra"
 require "haml"
 
+configure :production do
+end
+
 get "/" do
   haml :index
 end
