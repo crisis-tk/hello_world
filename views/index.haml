@@ -1,0 +1,15 @@
+!!! XML
+!!!
+%html
+  %head
+    %meta{ :content => "text/html", :charset => "utf-8" }
+    %title hello world だよ
+  %body
+    %h1 hello world だよ
+    %div hello world って入力してね。
+
+    %form{ :action => "/greeting", :method => "post" }
+      %input{ :type => "textfield", :name => "str"  }
+      %input{ :type => "submit", :value => "send" }
+
+    %div= @message
